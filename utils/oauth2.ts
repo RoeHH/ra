@@ -6,9 +6,6 @@ const secrets = {
   clientId: Deno.env.get("clientId"),
   clientSecret: Deno.env.get("clientSecret"),
 };
-if (!secrets.clientId || !secrets.clientSecret) {
-  throw new Error("environment variable clientSecret or clientId not set");
-}
 
 export interface User {
   userId: number;
