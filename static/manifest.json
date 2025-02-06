@@ -17,7 +17,13 @@
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
-    }
+    },  
+    {
+    "purpose": "maskable",
+    "sizes": "2925.714285714286x2925.714285714286",
+    "src": "maskable_icon.png",
+    "type": "image/png"
+  }
   ],
   "screenshots": [    
    {

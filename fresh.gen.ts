@@ -8,6 +8,7 @@ import * as $_middleware from "./routes/_middleware.ts";
 import * as $api_counter from "./routes/api/counter.ts";
 import * as $index from "./routes/index.tsx";
 import * as $login from "./routes/login.ts";
+import * as $logout from "./routes/logout.ts";
 import * as $Counter from "./islands/Counter.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -19,6 +20,7 @@ const manifest = {
     "./routes/api/counter.ts": $api_counter,
     "./routes/index.tsx": $index,
     "./routes/login.ts": $login,
+    "./routes/logout.ts": $logout,
   },
   islands: {
     "./islands/Counter.tsx": $Counter,

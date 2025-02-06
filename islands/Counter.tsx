@@ -8,7 +8,7 @@ interface CounterProps {
 export default function Counter(props: CounterProps) {
 
   props.count.subscribe((value) => {
-    fetch("http://localhost:8000/api/counter", {method: "POST", body: JSON.stringify({count: value})}).then((res) => res.text()).then((text) => {
+    fetch("http://ra.roeh.ch/api/counter", {method: "POST", body: JSON.stringify({count: value})}).then((res) => res.text()).then((text) => {
       console.log(text);
     });
   });
